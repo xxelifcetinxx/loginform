@@ -141,13 +141,18 @@ export default function Login() {
             Check me out
           </Label>
           {errors.terms && (
-            <FormFeedback data-cy="error-message">
-              {errorMessages.terms}
-            </FormFeedback>
-          )}
+  <FormFeedback data-cy="terms-error-message">
+    {errorMessages.terms}
+  </FormFeedback>
+)}
+
+
+
+
+
         </FormGroup>
         <FormGroup className="text-center p-4">
-          <Button disabled={!isValid} color="primary">
+          <Button data-cy="submit-button" disabled={!isValid} color="primary">
             Sign In
           </Button>
         </FormGroup>
