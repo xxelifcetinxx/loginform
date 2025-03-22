@@ -1,9 +1,9 @@
 import React from "react";
  import "./App.css";
  import "bootstrap/dist/css/bootstrap.min.css";
- import Login from "./components/login";
- import { Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
- import Success from "./components/success";
+ import Login from "./components/Login";
+ import { Route, Switch } from "react-router-dom";
+ import Success from "./components/Success";
  
  function App() {
    return (
