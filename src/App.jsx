@@ -10,7 +10,7 @@ import React from "react";
      <div className="app">
        <Switch>
          <Route exact path="/">
-           <p>LOGIN</p>
+          
            <Login />
          </Route>
          <Route path="/home">
