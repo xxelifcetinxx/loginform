@@ -10,7 +10,7 @@ import {
   Button,
 } from "reactstrap";
 
-import { useNavigate } from "react-router-dom"; // useNavigate import edildi
+import { useNavigate } from "react-router-dom";
 
 const initialState = {
   email: "",
@@ -29,7 +29,7 @@ export default function Login() {
   const [form, setForm] = useState(initialState);
   const [isValid, setIsValid] = useState(false);
   const [errors, setErrors] = useState({});
-  const navigate = useNavigate(); // useNavigate kullanıldı
+  const navigate = useNavigate();
 
   function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -80,7 +80,7 @@ export default function Login() {
     event.preventDefault();
 
     if (isValid) {
-      navigate("/home"); // navigate kullanıldı
+      navigate("/home");
     }
   };
 
@@ -125,7 +125,7 @@ export default function Login() {
           {errors.password && (
             <FormFeedback data-cy="error-message">
               {errorMessages.password}
-            </FormFormFeedback>
+            </FormFeedback>
           )}
         </FormGroup>
         <FormGroup check>
