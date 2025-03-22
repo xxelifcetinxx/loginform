@@ -1,6 +1,6 @@
 describe('Login Test', () => {
   beforeEach(() => {
-      cy.visit("http://localhost:5174");
+      cy.visit("http://localhost:5175/");
     });
   
   it('Form doldurulduğunda submit edilir', () => {
